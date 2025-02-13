@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanthashree S N | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Kanthashree S N</h1>
+            <p>Third year Computer Science & Engineering Student | Web Developer |      ML Enthusiast</p>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </header>
+
+    <section id="about" style="background-color:rgb(41, 40, 39)">
+        <img src="images/profile.jpg" alt="Profile Picture"> -->
+        <h2>About Me</h2>
+        <p style="font-style:italic">Passionate about web development, UI/UX, and machine learning.</p>
+    </section>
+
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">JavaScript & React</div>
+            <div class="skill">SQL & DBMS</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">GIT</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h1 style="color:aliceblue">Projects</h1>
+        <div class="project">
+            <img src="images/recipe.jpg" alt="Recipe Organizer">
+            <h3>Recipe Organizer</h3>
+            <p>A web app for managing and categorizing recipes.</p>
+        </div>
+        <div class="project">
+            <img src="images/dr.jpg" alt="Diabetic Retinopathy">
+            <h3>Diabetic Retinopathy Detection</h3>
+            <p>Machine learning model to detect diabetic retinopathy.</p>
+        </div>
+        <div class="project">
+            <img src="images/pregnancy.jpg" alt="pregnant women website">
+            <h3>Pregnancy Women Caring Website</h3>
+            <p>A web app which guides and track pregnancy.</p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h1>Hobbies</h1>
+        <div class="hobbies-container">
+            <div class="hobbie">Pet care</div>
+            <div class="hobbie">Gardening</div>
+            <div class="hobbie">Video Journaling</div>
+            <div class="hobbie">Being Grateful</div>
+            
+        </div>
+    </section>
+
+    <section id="resume" >
+        <h1 style="font-size:xx-large">   My Resume         </h1>
+        <a href="resume.pdf" download class="btn">Download My Resume</a>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Email: kanthashreesn@g.com</p>
+        <p>Phone: +91 974061695</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Kanthashree S N. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("reveal");
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+    
+</body>
+</html>
